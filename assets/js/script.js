@@ -10,6 +10,20 @@
 	    $('[data-toggle="tooltip"]').tooltip();
 	    $('[data-toggle="popover"]').popover();
 
+
+	    // alert();
+	    let myTypeItInstance = new TypeIt('#typeit', {
+		  // strings: "This will be typed!"
+		  // strings: ["This will be typed!", "And this will be typed too."], //new line
+		  loop:true
+
+		});
+
+		myTypeItInstance.pause(1000);
+		myTypeItInstance.type('My name is nikko.');
+		myTypeItInstance.go();
+
+
     	// MMenu
   //   	new Mmenu('#mmenu',{
 		// 	extensions : [
