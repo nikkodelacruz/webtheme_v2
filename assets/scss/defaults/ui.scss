@@ -1,0 +1,536 @@
+@import "../partials/variables";
+
+// Search form (header)
+.btn-search{
+	margin-left: 0 !important;
+    padding-left: 10px;
+	position: relative;
+	.search-form{
+		display: none;
+		position: absolute;
+	    padding-top: 20px;
+	    top: 20px;
+		right: 0;
+	    width: 200px;
+        z-index: 5;
+		// max-width: 100%;
+
+		.input-group{
+		    background: #fff;
+		    // border-radius: 50px;
+		    &::before{
+			    content: '';
+			    display: block;
+			    border: 5px solid transparent;
+			    border-bottom-color: #fff;
+			    position: absolute;
+		       	top: -10px;
+			    right: 5px;
+			}
+		}
+		.search-input{
+			position: relative;
+			background: transparent;
+		    border: none;
+		    padding: 10px 20px;
+		    padding-right: 0;
+		    &:focus{
+	    	    box-shadow: none;
+		    }
+		}
+		.search-submit{
+			background: transparent;
+			border: none;
+			&:focus{
+			    outline: none;
+			}
+		}
+	}
+	&:hover{
+		.search-form{
+			display: block;
+		}
+	}
+}
+
+// Testimonial modal
+.testimonial-modal{
+	max-width: 1110px;
+	.testimonial-content{
+	    font-size: 14px;
+	    line-height: 2;
+        height: 420px;
+	    overflow-x: auto;
+	}
+}
+
+
+// About us tab
+.about-us-tabs{
+    transform: translateY(-77px);
+	.fl-tabs-labels{
+		text-align: center;
+		a.fl-tabs-label{
+			float: none;
+			display: inline-block;
+		    margin: 0 -2px;
+		    background: #fff;
+
+		    // &:not(:last-of-type){
+		        // border-right: 1px solid #c7dded;
+		    // }
+		    &:focus{
+	    	    outline: none;
+		    }
+			&.fl-tab-active{
+				background: $blue;
+			}
+		}
+	}
+	.fl-tabs-panels{
+		.fl-tabs-panel{
+			.fl-tabs-panel-content{
+				padding: 0;
+			}
+		}
+	}
+}
+
+
+
+// Administration column
+.about-us-administration{
+	a{
+		display: block;
+		transition: 0.5s;
+		&:hover{
+			box-shadow: 1px 5px 15px 0px #000;
+		}
+		.image-container{
+			width: 280px;
+			height: 360px;
+			display: flex;
+			flex-direction: column;
+		    width: 100%;
+		    text-align: center;
+		    justify-content: flex-end;
+			.body-container{
+				color: #fff;
+				background: $blue;
+			    padding: 20px;
+				.name{
+					font-size: 16px;
+				}
+				.position{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+// Administration modal
+.administration-modal{
+	max-width: 1220px;
+	.administration-content{
+	    // font-size: 14px;
+	    // line-height: 2;
+     //    height: 420px;
+	    // overflow-x: auto;
+	}
+}
+
+
+// Learners Profile
+.learner-profile-container{
+	.post-image{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 436px;
+		height: 253px;
+		position: relative;
+		margin: auto;
+		&:hover{
+			.post-content{
+				opacity: 1;
+			}
+		}
+		.post-counter{
+			font-size: 30px;
+		    font-weight: bold;
+			color: #fff;
+			background: #064a85;
+		    position: absolute;
+	        left: -30px;
+		    top: -30px;
+		    z-index: 2;
+		    width: 80px;
+		    height: 80px;
+		    border-radius: 50%;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    border: 7px solid #b9d3e6;
+		}
+		.post-content{
+			opacity: 0;
+			transition: 0.5s;
+			background: rgba(211,232,247,0.9);
+		    display: flex;
+		    height: 100%;
+		    width: 100%;
+		    justify-content: center;
+		    align-items: center;
+	        padding: 0 40px;
+		}
+	}
+	.post-title{
+	    font-size: 18px;
+	    text-align: center;
+	    margin-top: 20px;
+	    margin-bottom: 80px;
+	    color: $blue;
+	    font-weight: bold;
+	}
+}
+
+// SSC Cares
+.ssc-archive-container{
+
+	// Archive
+	.post-container{
+	    height: 100%;
+		background: $light-blue;
+		position: relative;
+		img{
+			width: 100%;
+			height: 215px;
+			object-fit: cover;
+			object-position: center;
+		}
+		.p-4{
+		}
+		.post-title{
+			color: $blue;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.post-date{
+			color: $blue;
+			margin-bottom: 30px;
+		}
+		.post-content{
+			margin-bottom: 50px;
+		}
+		.post-link{
+			position: absolute;
+			bottom: 20px;
+		}
+	}
+
+	// Single page
+	.single-container-left{
+		background: $light-blue;
+		.post-title{
+			font-size: 24px;
+			color: $blue;
+			margin-top: 20px;
+		}
+		.post-date{
+			color: $blue;
+		}
+		.post-content{
+			margin-top: 40px;
+			color: $black;
+		}
+	}
+	.single-container-right{
+		.heading-title{
+			font-size: 18px;
+			color: $blue;
+			font-weight: bold;
+		}
+		.story-images{
+			background: $light-blue;
+			ul{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				& > li{
+					display: inline-block;
+					a{
+						display: block;
+						margin: 4px;
+						img{
+							width: 90px;
+							height: 90px;
+							object-fit: cover;
+							object-position: center;
+						}
+					}
+
+				}
+			}
+
+		}
+		.ssc-care-stories{
+			background: $light-blue;
+			ul{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				li{
+					a{
+						display: flex;
+						padding: 10px;
+						transition: 0.5s;
+						position: relative;
+						&:hover{
+							background: #fff;
+							.post-content i{
+								opacity: 1;
+							}
+						}
+						img{
+							width: 45px;
+							height: 45px;
+							object-fit: cover;
+							object-position: center;
+						}
+						.post-content{
+						    margin-left: 10px;
+						    width: 100%;
+							.post-title{
+								font-size: 18px;
+								color: $blue;
+								// font-weight: bold;
+							}
+							.post-date{
+								color: $black;
+								font-size: 12px;
+							}
+							i{
+								opacity: 0;
+								transition: 0.5s;
+								color: #d4e1ec;
+								position: absolute;
+								top: 50%;
+								right: 15px;
+								transform: translateY(-50%);
+								font-size: 25px;
+							}
+						}
+					}
+				}
+			}
+
+		}
+
+	}
+
+}
+
+
+// Close modal
+.fancybox-button.fancybox-close-small{
+    background: $blue;
+    color: #fff;
+    padding: 3px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+// Story images modal
+.gallery-modal{
+    padding: 0;
+}
+
+
+// Contact us thankyou modal
+.trigger-thankyou{
+	display: none;
+}
+#thankyou_modal{
+	padding: 0;
+	.thankyou_modal-content{
+	    max-width: 100%;
+	    width: 925px;
+	    height: 615px;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    background-size: cover;
+	    padding: 30px 20px;
+	}
+}
+
+
+// Custom tab
+ul.ssc-tab-navs{
+    transform: translateY(-92px);
+	& > li.nav-item{
+		a.nav-link{
+			font-size: 16px;
+		    padding: 12px 18px;
+		    background: #fff;
+		    border-radius: 0;
+		    color: $blue;
+		    line-height: 2;
+		    &.active{
+		    	color: #fff;
+		    	background: $blue;
+		    }
+
+		}
+	}
+}
+
+.ssc-tab-contents{
+	& > .tab-pane{
+
+	}
+}
+
+
+.fl-accordion {
+    .fl-accordion-item {
+        border: none;
+        &.fl-accordion-item-active{
+	        .fl-accordion-button {
+	        	background: $blue !important;
+	        }
+        }
+        .fl-accordion-button {
+            background: #46799a;
+            color: #fff;
+            border-radius: 10px;
+            a.fl-accordion-button-label{
+                font-size: 18px;
+                color: #fff;
+                &:focus{
+                    outline: none;
+                }
+            }
+            a.fl-accordion-button-icon {
+	            &:focus{
+                    outline: none;
+                }	
+            }
+            i.fl-accordion-button-icon {
+            	opacity: 1;
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+
+        .fl-accordion-content {
+        	border-radius: 10px;
+            margin-top: 10px;
+            background: $light-blue;
+            padding-top: 25px;
+        }
+
+        &.fl-accordion-item-active {
+            .fl-accordion-button {
+                background: #46799a;
+            }
+        }
+    }
+}
+
+
+// Fullcalendar
+.book-visit-calendar-container{
+	position: relative;
+	padding: 0 65px;
+	.arrow-left,
+	.arrow-right{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 50px;
+		line-height: 0;
+	    display: block;
+	    z-index: 9;
+	    i{
+	    	color: $blue;
+	    }
+	}
+	.arrow-left{
+		left: 0;
+	}
+	.arrow-right{
+		right: 0;
+	}
+
+	// FC
+	.ssc-book-calendar{
+		.fc-toolbar.fc-header-toolbar{
+		    margin-bottom: 40px;
+			.fc-left{
+				.fc-button-group,
+				.fc-today-button{
+					display: none;
+				}
+			}
+			.fc-center{
+				h2{
+					color: $blue;
+				}
+			}
+		}
+		.fc-view-container{
+			background: #fff;
+			color: $black;
+			&.wait{
+				cursor: wait;
+				.fc-view{
+				    pointer-events: none;
+				    user-select: none;
+				}
+			}
+			.fc-sat,
+			.fc-sun {
+				background-color: #CDCDCF;
+			}
+			.fc-content{
+				.fc-title{
+					color: #fff;
+				}
+			}
+		}
+	}
+
+}
+
+
+.ssc-pagination{
+	.page-numbers{
+		color: $red;
+		border-radius: 50%;
+		border: 1px solid $red;
+		width: 30px;
+	    height: 30px;
+	    display: inline-block;
+	    text-align: center;
+	    line-height: 2;
+        margin: 0 3px;
+        transition: 0.5s;
+        &:hover,
+		&.current{
+			background: $red;
+			color: #fff;
+		}
+		&.prev,
+		&.next{
+			border: none;
+			width: unset;
+	        &:hover{
+	        	background: #fff;
+	        	color: $red;
+	        }
+		}
+	}
+}

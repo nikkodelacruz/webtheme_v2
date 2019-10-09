@@ -1,0 +1,22 @@
+/*
+Theme Name: Web Theme
+Theme URI: #
+Author: Nikko Dela Cruz
+Author URI: http://nikkodelacruz.github.io/
+Description: Wordpress web theme
+Version: 1.0
+Text Domain: webtheme
+*/
+
+/**
+ * Do not edit/input anything here
+ */
+
+
+body{
+ 	margin: 0;
+}
+
+footer{
+	background: #f3f3f3;
+}
